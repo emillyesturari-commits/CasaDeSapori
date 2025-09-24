@@ -1,0 +1,34 @@
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
+
+header{
+    background-color: #747F42;
+    height: 50px;
+}
+
+.container_cabecalho{
+    display: flex;
+    justify-content: space-between;
+    width: 1440px;
+    margin: 0 auto;
+    height: 100%;
+    align-items: center;
+}
+
+.box_busca{
+    position: relative;
+}
+
+.img_seta{
+    height: 50px;
+}
+
+.campo_busca{
+    width: 500px;
+    height: 42px;
+    border-radius: 10px;
+    border: solid 1px #cccccc;
+}
