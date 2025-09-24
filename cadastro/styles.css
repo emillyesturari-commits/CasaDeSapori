@@ -19,3 +19,17 @@ header {
   height: 100px;
 }
 
+.icone_home {
+    height: 100px;
+    cursor: pointer;
+}
+
+.container_cabecalho {
+  display: flex;
+  justify-content: space-between;
+  width: 50px;
+  max-width: 1440px;
+  margin: 90;
+  height: 95px;
+  align-items: center;
+}
