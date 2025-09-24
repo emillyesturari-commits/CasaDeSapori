@@ -1,0 +1,35 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Bellota", system-ui;
+}
+
+:root {
+  --arredondamento: 10px;
+  --sombra: 0 4px 4px 2px #00000025;
+}
+
+body {
+  background-color: #FCFCFC;
+}
+
+header {
+  background-color: #747F42;
+  height: 100px;
+}
+
+.icone_home {
+    height: 100px;
+    cursor: pointer;
+}
+
+.container_cabecalho {
+  display: flex;
+  justify-content: space-between;
+  width: 50px;
+  max-width: 1440px;
+  margin: 90;
+  height: 95px;
+  align-items: center;
+}
