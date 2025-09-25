@@ -1,34 +1,74 @@
-*{
-padding: 0;
-margin: 0;
-box-sizing: border-box;
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Bellota", system-ui;
 }
 
-header{
-    background-color: #747F42;
-    height: 50px;
-}
 
-.container_cabecalho{
+.cards {
     display: flex;
+    flex-wrap: wrap;
+    gap: 30%;
+    justify-content: center;
+    font-size: small;
+
+}
+
+.card {
+    width: 350px;
+    height: 500px;
+    background-color: #F0E6D5;
+    border-radius: 40px;
+    text-align: center;
+    border: 1px solid #60340C;
+    
+    display: flex;
+    flex-direction: column;
     justify-content: space-between;
-    width: 1440px;
-    margin: 0 auto;
-    height: 100%;
     align-items: center;
+    padding-bottom: 10px;
+    margin-bottom: 100px;
+    box-shadow: 0 4px 4px 2px #00000025;
 }
 
-.box_busca{
-    position: relative;
+.card img {
+    width: 100%;
+    border-radius: 40px;
+    margin: 20px;
+    margin-left: 20px;
 }
 
-.img_seta{
-    height: 50px;
+.card p,
+.card span {
+    font-size: 18px;
+    width: 90%;
 }
 
-.campo_busca{
-    width: 500px;
-    height: 42px;
-    border-radius: 10px;
-    border: solid 1px #cccccc;
+.whatsapp {
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    transition: transform 0.5s ease-in-out,
+        filter 0.5s ease-in-out;
+}
+
+.whatsapp img {
+    width: 80px;
+    filter: drop-shadow(0 5px 1px #00000025);
+}
+
+.whatsapp:hover {
+    transform: scale(1.2);
+    filter: drop-shadow(0 10px 2px #00000025);
+}
+
+.secao_cards {
+    width: calc(100% - 360PX);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10%;
+
 }
