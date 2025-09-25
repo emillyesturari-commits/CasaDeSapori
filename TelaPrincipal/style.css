@@ -2,6 +2,7 @@
 padding: 0;
 margin: 0;
 box-sizing: border-box;
+font-family: "Italianno", cursive;
 }
 
 header{
@@ -19,9 +20,18 @@ header{
 }
 
 .cabecalho_menu{
-    width: 1440px;
-    height: 30px;
-    background-color: aqua;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #ffffff;
+}
+
+a{
+    font-family: "Josefin Slab", serif;
+    text-decoration: none;
+    color: black;
 }
 
 
@@ -35,10 +45,12 @@ header{
     left: 9px;
     top: 9px;
     fill: #ffffff;
+    cursor: pointer;
 }
 
-.img_seta{
+.seta{
     height: 50px;
+    cursor: pointer;
 }
 
 .logo{
@@ -50,6 +62,9 @@ header{
     height: 42px;
     border-radius: 30px;
     border: solid 1px #cccccc;
+    padding-left: 35px;
+    font-family: "Italiana", sans-serif;
+    font-size: 15px;
 }
 
 /* BANNER */
@@ -59,11 +74,18 @@ header{
     aspect-ratio: 3.48;
     background-repeat: no-repeat;
     background-size: cover;
+    margin-top: 40px;
 }
 
 .banner img{
     width: 100%;
     max-height: 350px;
+}
+
+.conteudos{
+    background-image: url(../assets/Copilot_20250820_142656\ 2.png);
+    height: 500px;
+    /* ajustar os tamanhos dps dos cards */
 }
 
 /* RODAPE */
@@ -75,16 +97,61 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    /* font-family:; */
 }
 
 footer p{
-     /* font-family: ; professor */
+    font-size: 30px;
+     font-family: "Italianno", cursive;
+     color: #ffffff;
      text-align: center;
 
 }
 
-/* main{
-    height: 1000px;
+.whatsapp{
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  transition: transform 0.5s ease-in-out,
+              filter 0.5s ease-in-out;
+}
+
+.whatsapp img{
+  width: 80px;
+  filter: drop-shadow(0 5px 1px #00000025);
+}
+
+.whatsapp:hover{
+  transform: scale(1.2);
+  filter: drop-shadow(0 10px 2px #00000025);
+}
+
+
+
+
+/* MEDIA */
+@media screen and (max-width: 600px){
+  .banner{
+    aspect-ratio: 2.0;
+    margin: 0;
     width: 100%;
-} */
+    aspect-ratio: 3.48;
+  }
+
+  .cabecalho_menu{
+    display: none;
+  }
+
+  .campo_busca{
+    display: none;
+  }
+
+  .logo{
+    position: absolute;
+  }
+
+  
+
+  }
+
+
+
