@@ -17,6 +17,7 @@ header{
     margin: 0 auto;
     height: 100%;
     align-items: center;
+  font-size: 30px;
 }
 
 .cabecalho_menu{
@@ -48,7 +49,7 @@ a{
     cursor: pointer;
 }
 
-.seta{
+.icone_seta{
     height: 50px;
     cursor: pointer;
 }
@@ -125,11 +126,25 @@ footer p{
   filter: drop-shadow(0 10px 2px #00000025);
 }
 
+.menu_hamburguer{
+  height: 50px;
+  display: none;
+}
+
 
 
 
 /* MEDIA */
 @media screen and (max-width: 600px){
+
+.container_cabecalho{
+  display: flex;
+  justify-content: space-between;
+  max-width: 300px;
+
+  
+}
+  
   .banner{
     aspect-ratio: 2.0;
     margin: 0;
@@ -137,7 +152,16 @@ footer p{
     aspect-ratio: 3.48;
   }
 
+  .icone_seta{
+    width: 50px;
+    height: 40px;
+  }
+
   .cabecalho_menu{
+    display: none;
+  }
+
+  .box_busca{
     display: none;
   }
 
@@ -146,10 +170,19 @@ footer p{
   }
 
   .logo{
-    position: absolute;
+    height: 90px;
+
   }
 
-  
+  .icone_lupa{
+    display: none;
+  }
+
+  .menu_hamburguer{
+    display: flex;
+    width: 50px;
+    height: 36px;
+  }
 
   }
 
