@@ -13,80 +13,38 @@
     white-space: nowrap;
 }
 
-    header {
-        background-color: #747F42;
-        height: 100px;
-    }
+header {
+    background-color: #747F42;
+    height: 100px;
+}
 
-    .container_cabecalho {
-        display: flex;
-        justify-content: space-between;
-        width: 1440px;
-        margin: 0 auto;
-        height: 100%;
-        align-items: center;
-    }
-
-    .cabecalho_menu {
-        width: 100%;
-        height: 40px;
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-        background-color: #ffffff;
-    }
-
-    a {
-        font-family: "Josefin Slab", serif;
-        text-decoration: none;
-        color: black;
-    }
-
-    .box_busca {
-        position: relative;
-    }
-
-    .icone_lupa {
-        height: 24px;
-        position: absolute;
-        left: 9px;
-        top: 9px;
-        fill: #ffffff;
-        cursor: pointer;
-    }
-
-    .seta {
-        height: 50px;
-        cursor: pointer;
-    }
-
-    .logo {
-        height: 100px;
-    }
-
-    .campo_busca {
-        width: 500px;
-        height: 42px;
-        border-radius: 30px;
-        border: solid 1px #cccccc;
-        padding-left: 35px;
-        font-family: "Italiana", sans-serif;
-        font-size: 15px;
-    }
-
-
-
- .container_cabecalho {
+.container_cabecalho {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     width: 1440px;
     margin: 0 auto;
     height: 100%;
     align-items: center;
 }
 
+.cabecalho_menu {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #ffffff;
+}
+
+a {
+    font-family: "Josefin Slab", serif;
+    text-decoration: none;
+    color: black;
+}
+
 .box_busca {
     position: relative;
+    margin: 0 auto;
 }
 
 .icone_lupa {
@@ -95,7 +53,53 @@
     left: 9px;
     top: 9px;
     fill: #ffffff;
+    cursor: pointer;
+    right: 50px;
+    display: flex;
+    justify-items: right;
 }
+
+.seta {
+    height: 50px;
+    cursor: pointer;
+}
+
+.logo {
+    height: 100px;
+}
+
+.campo_busca {
+    width: 500px;
+    height: 42px;
+    border-radius: 30px;
+    border: solid 1px #cccccc;
+    padding-left: 35px;
+    font-family: "Italiana", sans-serif;
+    /* position: relative; */
+    font-size: 15px;
+}
+
+.conteudo {
+    height: 500px;
+}
+
+
+
+.container_cabecalho {
+    display: flex;
+    justify-content: space-between;
+    width: 1440px;
+    margin: 0 auto;
+    height: 100%;
+    align-items: center;
+}
+
+/* .box_busca {
+    display: flex;
+    justify-content: center;
+    } */
+
+
 
 .img_seta {
     height: 50px;
@@ -110,52 +114,66 @@
     height: 42px;
     border-radius: 30px;
     border: solid 1px #cccccc;
+
 }
 
 .container_home {
+    background-image: url(../assets/jacinto\ pin.png);
     width: 90%;
-    max-width: 1050px;
-    background-color: aqua;
+    max-width: 1200px;
+
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
 
 
-} 
-
+}
 
 
 .secao_cards {
     display: flex;
     flex-wrap: wrap;
-    gap: 10%;
     justify-content: center;
-    font-size: small;
+    gap: 10%;
+
+
+
 }
 
 .card {
-    width: 350px;
-    height: 500px;
-    background-color: #ffffff;
-    border-radius: 30px;
-    text-align: center;
+    margin: 50px 0;
+    width: 316px;
+    height: 274px;
+    text-decoration: none;
+    color: #ffffff;
     display: flex;
     flex-direction: column;
+    border-radius: 25px;
+    padding: 10px 50px 40px 10px;
     justify-content: space-between;
     align-items: center;
-    padding-bottom: 10px;
-    margin-bottom: 100px;
-    box-shadow: 0 4px 4px 2px #00000025;
-}
+    font-size: 32px;
+
+    box-shadow: 0 0 40px 2px #00000075;
+    font-family: "Italianno", "cursive";
 
 
-.card_pizza img {
-    width: 250px;
 
 }
 
-.card_pizza h2 {
-    color: black;
+.secao_cards img {
+    width: 276px;
+    height: 184px;
 
+}
+
+.card img {
+    display: flex;
+    margin-left: 40px;
+}
+
+h2 {
+    color: #715C5C;
+    padding: 14px 68px 15px 100px;
 }
