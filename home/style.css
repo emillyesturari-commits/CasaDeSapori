@@ -157,6 +157,7 @@ a {
     flex-wrap: wrap;
     justify-content: center;
     gap: 10%;
+    cursor: pointer;
 
 
 
@@ -205,6 +206,7 @@ h2 {
     color: #715C5C;
     padding: 14px 68px 15px 100px;
 }
+
 
 
 html,
