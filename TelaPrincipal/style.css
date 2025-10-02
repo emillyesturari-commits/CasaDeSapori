@@ -1,132 +1,132 @@
-*{
-padding: 0;
-margin: 0;
-box-sizing: border-box;
-font-family: "Italianno", cursive;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Italianno", cursive;
 }
 
-header{
-    background-color: #747F42;
-    height: 100px;
+header {
+  background-color: #747F42;
+  height: 100px;
 }
 
-.container_cabecalho{
-    display: flex;
-    justify-content: space-between;
-    width: 1440px;
-    margin: 0 auto;
-    height: 100%;
-    align-items: center;
-  font-size: 30px;
+.container_cabecalho {
+  display: flex;
+  justify-content: space-between;
+  width: 1440px;
+  margin: 0 auto;
+  height: 100%;
+  align-items: center;
 }
 
-.cabecalho_menu{
-    width: 100%;
-    height: 40px;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    background-color: #ffffff;
+.cabecalho_menu {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #ffffff;
 }
 
-a{
-    font-family: "Josefin Slab", serif;
-    text-decoration: none;
-    color: black;
+a {
+  font-family: "Josefin Slab", serif;
+  font-size: 25px;
+  text-decoration: none;
+  color: black;
 }
 
 
-.box_busca{
-    position: relative;
+.box_busca {
+  position: relative;
 }
 
-.icone_lupa{
-    height: 24px;
-    position: absolute;
-    left: 9px;
-    top: 9px;
-    fill: #ffffff;
-    cursor: pointer;
+.icone_lupa {
+  height: 24px;
+  position: absolute;
+  left: 9px;
+  top: 9px;
+  fill: #ffffff;
+  cursor: pointer;
 }
 
-.icone_seta{
-    height: 50px;
-    cursor: pointer;
+.icone_seta {
+  height: 50px;
+  cursor: pointer;
 }
 
-.logo{
-    height: 100px;
+.logo {
+  height: 100px;
 }
 
-.campo_busca{
-    width: 500px;
-    height: 42px;
-    border-radius: 30px;
-    border: solid 1px #cccccc;
-    padding-left: 35px;
-    font-family: "Italiana", sans-serif;
-    font-size: 15px;
+.campo_busca {
+  width: 500px;
+  height: 42px;
+  border-radius: 30px;
+  border: solid 1px #cccccc;
+  padding-left: 35px;
+  font-family: "Italiana", sans-serif;
+  font-size: 20px;
 }
 
 /* BANNER */
-.banner{
-    background-image: url(../assets/Food-Pizza-Basil-Tomato\ 1.png);
-    width: 100%;
-    aspect-ratio: 3.48;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin-top: 40px;
+.banner {
+  background-image: url(../assets/Food-Pizza-Basil-Tomato\ 1.png);
+  width: 100%;
+  aspect-ratio: 3.48;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 40px;
 }
 
-.banner img{
-    width: 100%;
-    max-height: 350px;
+.banner img {
+  width: 100%;
+  max-height: 350px;
 }
 
-.conteudos{
-    background-image: url(../assets/Copilot_20250820_142656\ 2.png);
-    height: 500px;
-    /* ajustar os tamanhos dps dos cards */
+.conteudos {
+  background-image: url(../assets/Copilot_20250820_142656\ 2.png);
+  height: 500px;
+  /* ajustar os tamanhos dps dos cards */
 }
 
 /* RODAPE */
 
-.rodape{
-    width: 100%;
-    height: 60px;
-    background-color: #AD271B;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.rodape {
+  width: 100%;
+  height: 60px;
+  background-color: #AD271B;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-footer p{
-    font-size: 30px;
-     font-family: "Italianno", cursive;
-     color: #ffffff;
-     text-align: center;
+footer p {
+  font-size: 30px;
+  font-family: "Italianno", cursive;
+  color: #ffffff;
+  text-align: center;
 
 }
 
-.whatsapp{
+.whatsapp {
   position: fixed;
   right: 30px;
   bottom: 30px;
   transition: transform 0.5s ease-in-out,
-              filter 0.5s ease-in-out;
+    filter 0.5s ease-in-out;
 }
 
-.whatsapp img{
+.whatsapp img {
   width: 80px;
   filter: drop-shadow(0 5px 1px #00000025);
 }
 
-.whatsapp:hover{
+.whatsapp:hover {
   transform: scale(1.2);
   filter: drop-shadow(0 10px 2px #00000025);
 }
 
-.menu_hamburguer{
+.menu_hamburguer {
   height: 50px;
   display: none;
 }
@@ -135,56 +135,43 @@ footer p{
 
 
 /* MEDIA */
-@media screen and (max-width: 600px){
+@media screen and (max-width: 600px) {
 
-.container_cabecalho{
-  display: flex;
-  justify-content: space-between;
-  max-width: 300px;
+  .container_cabecalho {
+    display: flex;
+    justify-content: space-between;
+    max-width: 300px;
 
-  
-}
-  
-  .banner{
+
+  }
+
+  .banner {
     aspect-ratio: 2.0;
     margin: 0;
     width: 100%;
     aspect-ratio: 3.48;
   }
 
-  .icone_seta{
+  .icone_seta {
     width: 50px;
     height: 40px;
   }
 
-  .cabecalho_menu{
+  .box_busca,
+  .campo_busca,
+  .logo,
+  .icone_lupa,
+  .cabecalho_menu {
     display: none;
   }
 
-  .box_busca{
-    display: none;
-  }
-
-  .campo_busca{
-    display: none;
-  }
-
-  .logo{
-    height: 90px;
-
-  }
-
-  .icone_lupa{
-    display: none;
-  }
-
-  .menu_hamburguer{
+  .menu_hamburguer {
     display: flex;
     width: 50px;
     height: 36px;
   }
 
+  .rodape p {
+    font-size: 27px;
   }
-
-
-
+}
