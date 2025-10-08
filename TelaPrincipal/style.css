@@ -89,6 +89,57 @@ a {
   /* ajustar os tamanhos dps dos cards */
 }
 
+/* Cards */
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30%;
+    justify-content: center;
+    font-size: small;
+
+
+}
+
+.card {
+    width: 350px;
+    height: 500px;
+    background-color: #F0E6D5;
+    border-radius: 40px;
+    text-align: center;
+    border: 1px solid #60340C;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 300px;
+
+
+  }
+  .card img {
+    width: 100%;
+    border-radius: 40px;
+    margin: 20px;
+    
+}
+
+.card p,
+.card span {
+    font-size: 18px;
+    width: 90%;
+}
+
+
+.secao_cards {
+    width: calc(100% - 360PX);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10%;
+    
+} 
+
 /* RODAPE */
 
 .rodape {
@@ -138,12 +189,12 @@ footer p {
 @media screen and (max-width: 600px) {
 
   .container_cabecalho {
-    display: flex;
-    justify-content: space-between;
-    max-width: 300px;
-
-
-  }
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Bellota", system-ui;
+    font-family: "Italiana", sans-serif;
+}
 
   .banner {
     aspect-ratio: 2.0;
@@ -174,4 +225,7 @@ footer p {
   .rodape p {
     font-size: 27px;
   }
+    
+
+ 
 }
